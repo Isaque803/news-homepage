@@ -19,7 +19,7 @@ img{
 body{
     font-family: 'Inter', sans-serif;
     background-color: hsl(36, 100%, 99%);
-    margin: 3.5rem 11rem 0rem 11rem;
+    padding: 3.5rem 11rem 0rem 11rem;
     font-size: 0.9rem;
 }
 
