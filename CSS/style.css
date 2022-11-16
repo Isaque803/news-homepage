@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 *{
@@ -18,7 +19,7 @@ img{
 body{
     font-family: 'Inter', sans-serif;
     background-color: hsl(36, 100%, 99%);
-    margin: 1.4rem 11rem 0rem 11rem;
+    margin: 3.5rem 11rem 0rem 11rem;
     font-size: 0.9rem;
 }
 
@@ -55,26 +56,26 @@ header a:hover{
 
 #menu-hamburguer span{
     background-color: black;
-    width: 50px;
-    height: 6px;
+    width: 45px;
+    height: 4px;
     display: block;
     position: relative;
 }
 
 #menu-hamburguer span::after, #menu-hamburguer span::before{
     content:"";
-    border: 2.5px solid black;
-    border-width: 3px;
+    border: 1px solid black;
+    border-width: 2px;
     position: absolute;
-    width: 43.8px; 
+    width: 41px; 
 }
 
 #menu-hamburguer span::after{
-    bottom: -15px;
+    bottom: -12px;
 }
 
 #menu-hamburguer span::before{
-    top: -15px;
+    top: -12px;
 }
 
 .active #menu-hamburguer span{
@@ -101,7 +102,7 @@ header a:hover{
     display: grid;
     grid-template-areas: 
     "main-img main-img sec02"
-    ". p sec02"
+    "title p sec02"
     "article01 article02 article03";
     gap: 20px;
 }
@@ -118,6 +119,10 @@ header a:hover{
 
 .main-img-mobile{
     display: none;
+}
+
+.title-main{
+    grid-area: title;
 }
 
 .paragraph-main{
@@ -142,6 +147,7 @@ header a:hover{
     font-size: 0.8rem;
     position: absolute;
     bottom: 0px;
+    display: block;
 }
 
 .paragraph-main a:hover{
@@ -187,21 +193,22 @@ header a:hover{
 .articles{
     display: flex;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .articles div img{
-    width: 60px;  
+    width: 70px;  
     height: 100%;
 }
 
 .articles h3{
     color: hsl(233, 8%, 79%);
+    font-size: 1.3rem;
 }
 
 .articles a{
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: hsl(240, 100%, 5%);
     padding: 0.5rem 0rem;
     display: block;
@@ -214,8 +221,8 @@ header a:hover{
 
 .articles p{
     color: hsl(236, 13%, 42%);
-    font-size: 0.7rem;
-    line-height: 16px;
+    font-size: 0.8rem;
+    line-height: 20px;
 }
 
 .article01{
@@ -255,6 +262,8 @@ header a:hover{
 
     .paragraph-main a{
         position: relative;
+        width: 100px;
+        text-align: center;
     }
 
     .sec02{
@@ -268,6 +277,10 @@ header a:hover{
 }
 
 @media (max-width: 650px){
+    #logo{
+        width: 50px;
+    }
+
     header nav{
         display: none;
     }
