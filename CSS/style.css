@@ -272,7 +272,7 @@ header a:hover{
         display: none;
     }
     
-    header.active nav{
+    .active nav{
         position: fixed;
         background-color:  hsl(36, 100%, 99%);
         height: 100%;
@@ -309,11 +309,6 @@ header a:hover{
         font-weight: 600;
     }
 
-    .active #menu-hamburguer{
-        position: fixed;
-        right: 1rem;
-    }
-
     #menu-hamburguer{
         display: flex;
         position: relative;
@@ -328,7 +323,7 @@ header a:hover{
         margin-bottom: 1rem;
     }
     
-    .active ~ #screen-black{
+    .active > #screen-black{
         display: block;
         background-color: rgba(0, 0, 0, 0.6);
         width: 100%;
@@ -336,6 +331,10 @@ header a:hover{
         position: fixed;
         z-index: 100;
         top: 0px;
+    }
+
+    body.active{
+        overflow: hidden;
     }
 
 }
